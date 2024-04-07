@@ -42,7 +42,7 @@ dotenv.config();
 const token = process.env.GITHUB_TOKEN
 const gh = new GitHub({ token });
 const ownerLogin = process.env.GITHUB_USER
-const repoName = "sitecore.connect.tenant.api"
+const repoName = "my.repo"
 let secretsData;
 try {
     secretsData = fs.readFileSync(path.resolve(process.env.SECRET_PATH)).toString();
