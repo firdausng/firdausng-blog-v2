@@ -11,22 +11,22 @@
     <meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article>
+<article class="">
     <!-- Title -->
-    <hgroup>
-        <h1>{data.meta.title}</h1>
+    <hgroup class=" text-center">
+        <h1 class="text-3xl">{data.meta.title}</h1>
         <p>Published at {formatDate(data.meta.date)}</p>
     </hgroup>
 
     <!-- Tags -->
-    <div class="tags">
+    <div class="tags  text-center">
         {#each data.meta.categories as category}
-            <span class="surface-4">&num;{category}</span>
+            <span class="bg-primary-900 text-primary-300 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-primary-300 dark:text-primary-900">&num;{category}</span>
         {/each}
     </div>
 
     <!-- Post -->
-    <div class="prose">
+    <div class="prose container mx-auto p-2 pb-8">
         <svelte:component this={data.content} />
     </div>
 </article>

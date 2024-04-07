@@ -38,7 +38,7 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
   darkMode: 'class',
   safelist: [
     'text-2xl',
