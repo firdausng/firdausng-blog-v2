@@ -1,6 +1,6 @@
 ---
 title: Use Sveltekit with Wails app
-description: Use Sveltekit with Wails app
+description: In this article, we explore integrating SvelteKit with a Wails app. We will create a Wails project named ‘todo-app’ and update the Wails app by modifying the ‘wails.json’ file to include frontend-related commands. Revamp the frontend by setting up SvelteKit. Enjoy your new Wails App powered by SvelteKit! 🚀
 date: '2023-11-19'
 categories:
   - sveltekit

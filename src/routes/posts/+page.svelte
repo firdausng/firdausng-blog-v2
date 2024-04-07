@@ -10,13 +10,13 @@
 </svelte:head>
 
 <!-- Posts -->
-<section>
-    <ul class="posts">
+<section class="w-3/6 mx-auto">
+    <ul class="flex flex-col gap-4">
         {#each data.posts as post}
-            <li class="post">
-                <a href={'posts/' + post.slug} class="title">{post.title}</a>
-                <p class="date">{formatDate(post.date)}</p>
-                <p class="description">{post.description}</p>
+            <li class="bg-primary-500/20 p-2 rounded shadow shadow-primary-800/50">
+                <a href={'posts/' + post.slug} class="font-semibold text-2xl">{post.title}</a>
+                <p class="text-xs">{formatDate(post.date)}</p>
+                <p class="text-md">{post.description}</p>
             </li>
         {/each}
     </ul>
