@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	let navList = [
 		{name: 'Home', path:'/'},
-		{name: 'Posts', path:'/Posts'},
+		{name: 'Posts', path:'/posts'},
 		{name: 'About', path:'/about'}
 	]
 </script>
