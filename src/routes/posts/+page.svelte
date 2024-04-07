@@ -10,7 +10,7 @@
 </svelte:head>
 
 <!-- Posts -->
-<section class="w-3/6 mx-auto">
+<section class="mx-auto">
     <ul class="flex flex-col gap-4">
         {#each data.posts as post}
             <li class="bg-primary-500/20 p-2 rounded shadow shadow-primary-800/50">

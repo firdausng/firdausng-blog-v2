@@ -20,14 +20,14 @@
     </hgroup>
 
     <!-- Tags -->
-    <div class="tags  text-center">
+    <div class="text-center p-2">
         {#each data.meta.categories as category}
             <span class="bg-primary-900 text-primary-300 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-primary-300 dark:text-primary-900">&num;{category}</span>
         {/each}
     </div>
 
     <!-- Post -->
-    <div class="prose container mx-auto p-2 pb-8">
+    <div class="prose mx-auto p-4 pb-8 mb-4 bg-primary-200 rounded shadow shadow-primary-400">
         <svelte:component this={data.content} />
     </div>
 </article>

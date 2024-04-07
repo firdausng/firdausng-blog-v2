@@ -7,7 +7,7 @@
 	<title>{config.title} - About</title>
 </svelte:head>
 
-<div class="flex flex-col gap-2 items-center h-screen relative text-primary-200">
+<div class="flex flex-col gap-2 items-center h-screen relative text-primary-200 p-2">
 	<div class="absolute top-[5%] left-[45%]">
 		<img class="object-cover h-48 w-48 rounded-full border-4 border-primary-700" alt="profile" src={profilePicture} />
 	</div>

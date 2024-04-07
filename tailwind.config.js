@@ -5,6 +5,13 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '100ch', // add required value here
+          }
+        }
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
