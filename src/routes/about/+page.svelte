@@ -1,6 +1,11 @@
 <script lang="ts">
 	import profilePicture from '$lib/assets/images/profile-image.jpeg';
+	import * as config from "$lib/config";
 </script>
+
+<svelte:head>
+	<title>{config.title} - About</title>
+</svelte:head>
 
 <div class="flex flex-col gap-2 items-center h-screen relative text-primary-200">
 	<div class="absolute top-[5%] left-[45%]">
